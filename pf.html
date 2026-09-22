@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Poetic Films | Wedding Photography</title>
+
+
+<!-- GOOGLE FONTS -->
+
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet">
+
+
+<style>
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #f6f2ec;
+    color: #292321;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Cormorant Garamond", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(20, 17, 15, 0.48),
+            rgba(20, 17, 15, 0.68)
+        ),
+        url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85")
+        center / cover;
+
+    color: white;
+}
+
+
+/* dark elegant border */
+
+.hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 25px;
+
+    border: 1px solid rgba(255,255,255,0.45);
+
+    pointer-events: none;
+}
+
+
+.hero-content {
+
+    max-width: 850px;
+
+    padding: 30px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.brand {
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 7px;
+
+    margin-bottom: 25px;
+
+    color: #e2c58d;
+
+    font-weight: 500;
+}
+
+
+.hero h1 {
+
+    font-size: clamp(60px, 10vw, 110px);
+
+    font-weight: 400;
+
+    line-height: 0.9;
+
+    margin-bottom: 25px;
+}
+
+
+.hero h1 span {
+
+    color: #e2c58d;
+}
+
+
+.hero-subtitle {
+
+    font-size: 15px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 40px;
+
+    color: #f5f0e8;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.btn {
+
+    display: inline-block;
+
+    padding: 15px 32px;
+
+    border: 1px solid #d8bb83;
+
+    color: #d8bb83;
+
+    background: transparent;
+
+    text-transform: uppercase;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    transition: all 0.4s ease;
+
+    cursor: pointer;
+}
+
+
+.btn:hover {
+
+    background: #d8bb83;
+
+    color: #211b19;
+
+}
+
+
+/* =========================================================
+   COMMON SECTION
+========================================================= */
+
+section {
+
+    padding: 100px 7%;
+}
+
+
+.container {
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+
+.small-heading {
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: #a58655;
+
+    margin-bottom: 15px;
+}
+
+
+.section-heading h2 {
+
+    font-size: 52px;
+
+    font-weight: 500;
+
+    color: #302825;
+}
+
+
+.section-heading p {
+
+    max-width: 600px;
+
+    margin: 15px auto 0;
+
+    color: #756c67;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.intro {
+
+    background: #f6f2ec;
+
+    text-align: center;
+}
+
+
+.intro-text {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 27px;
+
+    line-height: 1.7;
+
+    color: #514943;
+}
+
+
+/* =========================================================
+   EVENT SECTION
+========================================================= */
+
+.events-section {
+
+    background: #eee8df;
+}
+
+
+.events {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+
+.event-card {
+
+    background: #fff;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    position: relative;
+
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+
+.event-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 40px rgba(40,30,25,0.12);
+}
+
+
+.event-image {
+
+    height: 330px;
+
+    overflow: hidden;
+}
+
+
+.event-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+}
+
+
+.event-card:hover img {
+
+    transform: scale(1.08);
+}
+
+
+.event-info {
+
+    padding: 25px;
+
+    text-align: center;
+}
+
+
+.event-info h3 {
+
+    font-size: 29px;
+
+    font-weight: 500;
+
+    margin-bottom: 8px;
+}
+
+
+.event-info span {
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #a58655;
+}
+
+
+/* hidden details */
+
+.event-details {
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: max-height 0.5s ease;
+
+    padding: 0 25px;
+
+    text-align: center;
+
+    color: #746b66;
+
+    font-size: 12px;
+
+    line-height: 2;
+}
+
+
+.event-card.active
+.event-details {
+
+    max-height: 160px;
+
+    padding-bottom: 25px;
+}
+
+
+/* =========================================================
+   PACKAGE SECTION
+========================================================= */
+
+.package-section {
+
+    background: #211c1a;
+
+    color: white;
+}
+
+
+.package-section .section-heading h2 {
+
+    color: white;
+}
+
+
+.package-section .section-heading p {
+
+    color: #c4bcb6;
+}
+
+
+.package-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.package-card {
+
+    border: 1px solid #51473f;
+
+    padding: 40px 30px;
+
+    background: #292320;
+
+    transition: 0.4s;
+}
+
+
+.package-card:hover {
+
+    border-color: #d8bb83;
+
+    transform: translateY(-5px);
+}
+
+
+.package-card h3 {
+
+    color: #d8bb83;
+
+    font-size: 31px;
+
+    margin-bottom: 25px;
+}
+
+
+.package-card ul {
+
+    list-style: none;
+}
+
+
+.package-card li {
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #403833;
+
+    font-size: 13px;
+
+    color: #d8d0ca;
+}
+
+
+.package-card li:last-child {
+
+    border-bottom: none;
+}
+
+
+.package-card li::before {
+
+    content: "—";
+
+    color: #d8bb83;
+
+    margin-right: 10px;
+}
+
+
+/* =========================================================
+   FEATURE IMAGE
+========================================================= */
+
+.feature-image {
+
+    height: 600px;
+
+    background:
+        linear-gradient(
+            rgba(20,15,13,0.25),
+            rgba(20,15,13,0.5)
+        ),
+        url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=2000&q=85")
+        center / cover;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+.feature-content {
+
+    max-width: 700px;
+
+    padding: 30px;
+}
+
+
+.feature-content h2 {
+
+    font-size: 65px;
+
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+
+.feature-content p {
+
+    margin-top: 20px;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   DELIVERABLES
+========================================================= */
+
+.deliverables {
+
+    background: #f6f2ec;
+}
+
+
+.deliverable-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 18px;
+}
+
+
+.deliverable {
+
+    text-align: center;
+
+    padding: 35px 15px;
+
+    background: white;
+
+    border: 1px solid #e1d9d0;
+
+    transition: 0.3s;
+}
+
+
+.deliverable:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #c7a86f;
+}
+
+
+.deliverable img {
+
+    width: 100%;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    margin-bottom: 20px;
+}
+
+
+.deliverable h3 {
+
+    font-size: 22px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.price-section {
+
+    background:
+        linear-gradient(
+            rgba(27,22,20,0.91),
+            rgba(27,22,20,0.94)
+        ),
+        url("https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=2000&q=85")
+        center / cover;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+.price-section h2 {
+
+    font-size: 55px;
+
+    font-weight: 400;
+}
+
+
+.price-description {
+
+    color: #cfc6c0;
+
+    margin-top: 15px;
+}
+
+
+.price {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 75px;
+
+    color: #e2c58d;
+
+    margin: 25px 0;
+
+    display: none;
+}
+
+
+.price.show {
+
+    display: block;
+
+    animation: revealPrice 1s ease;
+}
+
+
+@keyframes revealPrice {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+.whatsapp {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 16px 30px;
+
+    background: #e2c58d;
+
+    color: #211b19;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    transition: 0.3s;
+}
+
+
+.whatsapp:hover {
+
+    background: white;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    background: #151110;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+
+footer h2 {
+
+    font-size: 45px;
+
+    color: #e2c58d;
+
+    font-weight: 400;
+
+    letter-spacing: 3px;
+}
+
+
+footer p {
+
+    color: #aaa;
+
+    font-size: 12px;
+
+    margin: 15px 0 30px;
+}
+
+
+.footer-line {
+
+    width: 60px;
+
+    height: 1px;
+
+    background: #e2c58d;
+
+    margin: 25px auto;
+}
+
+
+.copyright {
+
+    color: #777;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .events {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .package-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .deliverable-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    section {
+
+        padding: 70px 20px;
+
+    }
+
+    .hero::after {
+
+        inset: 12px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 55px;
+
+    }
+
+    .hero-subtitle {
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+
+    }
+
+    .events {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .event-image {
+
+        height: 380px;
+
+    }
+
+    .section-heading h2 {
+
+        font-size: 42px;
+
+    }
+
+    .feature-image {
+
+        height: 500px;
+
+    }
+
+    .feature-content h2 {
+
+        font-size: 48px;
+
+    }
+
+    .deliverable-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .price {
+
+        font-size: 55px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SCROLL ANIMATION
+========================================================= */
+
+.fade {
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+.fade.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="brand">
+            POETIC FILMS
+        </div>
+
+        <h1>
+            Your Love.<br>
+            <span>Your Story.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            Wedding · Engagement · Reception · Pre-Wedding
+        </p>
+
+        <a href="#events" class="btn">
+            Explore Our Package
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- ======================================================
+     INTRO
+====================================================== -->
+
+<section class="intro">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="small-heading">
+                POETIC FILMS
+            </div>
+
+            <h2>
+                Moments Become Memories
+            </h2>
+
+        </div>
+
+
+        <p class="intro-text">
+
+            Every smile, every emotion and every beautiful
+            moment deserves to be remembered. Let us preserve
+            the story of your special day through timeless
+            photography and cinematic films.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     EVENTS
+====================================================== -->
+
+<section class="events-section"
+         id="events">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+    <div class="small-heading">
+        Your Celebration
+    </div>
+
+    <h2>
+        Every Moment Matters
+    </h2>
+
+    <p>
+        Click on each occasion to discover what is included.
+    </p>
+
+</div>
+
+
+<div class="events">
+
+
+<!-- ENGAGEMENT -->
+
+<div class="event-card fade">
+
+    <div class="event-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80"
+        alt="Engagement photography">
+
+    </div>
+
+
+    <div class="event-info">
+
+        <span>
+            Celebration
+        </span>
+
+        <h3>
+            Engagement Day
+        </h3>
+
+    </div>
+
+
+    <div class="event-details">
+
+        Traditional Photography<br>
+        Traditional Video<br>
+        Candid Photography
+
+    </div>
+
+</div>
+
+
+
+<!-- WEDDING -->
+
+<div class="event-card fade">
+
+    <div class="event-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80"
+        alt="Wedding photography">
+
+    </div>
+
+
+    <div class="event-info">
+
+        <span>
+            The Beginning
+        </span>
+
+        <h3>
+            Wedding Day
+        </h3>
+
+    </div>
+
+
+    <div class="event-details">
+
+        Traditional Photography<br>
+        Traditional Video<br>
+        Candid Photography
+
+    </div>
+
+</div>
+
+
+
+<!-- RECEPTION -->
+
+<div class="event-card fade">
+
+    <div class="event-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80"
+        alt="Wedding reception">
+
+    </div>
+
+
+    <div class="event-info">
+
+        <span>
+            Celebration
+        </span>
+
+        <h3>
+            Wedding Reception
+        </h3>
+
+    </div>
+
+
+    <div class="event-details">
+
+        Traditional Photography<br>
+        Traditional Video<br>
+        Candid Photography
+
+    </div>
+
+</div>
+
+
+
+<!-- PRE WEDDING -->
+
+<div class="event-card fade">
+
+    <div class="event-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=900&q=80"
+        alt="Pre wedding photography">
+
+    </div>
+
+
+    <div class="event-info">
+
+        <span>
+            Before The Beginning
+        </span>
+
+        <h3>
+            Pre-Wedding Day
+        </h3>
+
+    </div>
+
+
+    <div class="event-details">
+
+        Pre-Wedding Day<br>
+        Edited Photos<br>
+        Pre-Wedding Video
+
+    </div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     PACKAGE
+====================================================== -->
+
+<section class="package-section">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+    <div class="small-heading">
+        The Collection
+    </div>
+
+    <h2>
+        What's Included?
+    </h2>
+
+    <p>
+        A complete photography and videography collection
+        for your celebrations.
+    </p>
+
+</div>
+
+
+<div class="package-grid">
+
+
+<!-- PHOTOGRAPHY -->
+
+<div class="package-card fade">
+
+    <h3>
+        Photography
+    </h3>
+
+    <ul>
+
+        <li>
+            Traditional Photography
+        </li>
+
+        <li>
+            Candid Photography
+        </li>
+
+        <li>
+            Edited Photos
+        </li>
+
+    </ul>
+
+</div>
+
+
+
+<!-- VIDEOGRAPHY -->
+
+<div class="package-card fade">
+
+    <h3>
+        Videography
+    </h3>
+
+    <ul>
+
+        <li>
+            Traditional Video
+        </li>
+
+        <li>
+            Pre-Wedding Video
+        </li>
+
+        <li>
+            Highlight Video
+        </li>
+
+        <li>
+            Wedding Full Video
+        </li>
+
+    </ul>
+
+</div>
+
+
+
+<!-- ALBUMS -->
+
+<div class="package-card fade">
+
+    <h3>
+        Deliverables
+    </h3>
+
+    <ul>
+
+        <li>
+            Photo Frame
+        </li>
+
+        <li>
+            Sheet Album
+        </li>
+
+        <li>
+            Calendar
+        </li>
+
+        <li>
+            Highlight Video
+        </li>
+
+    </ul>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     FEATURE IMAGE
+====================================================== -->
+
+<section class="feature-image">
+
+    <div class="feature-content">
+
+        <div class="small-heading">
+            Your Story
+        </div>
+
+        <h2>
+            Captured With Emotion.
+        </h2>
+
+        <p>
+            Crafted to last a lifetime.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     DELIVERABLES
+====================================================== -->
+
+<section class="deliverables">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+    <div class="small-heading">
+        After The Celebration
+    </div>
+
+    <h2>
+        Take Your Memories Home
+    </h2>
+
+</div>
+
+
+<div class="deliverable-grid">
+
+
+<div class="deliverable fade">
+
+    <img
+    src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?auto=format&fit=crop&w=600&q=80"
+    alt="Wedding photo album">
+
+    <h3>
+        Sheet Album
+    </h3>
+
+</div>
+
+
+
+<div class="deliverable fade">
+
+    <img
+    src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=600&q=80"
+    alt="Wedding photo frame">
+
+    <h3>
+        Photo Frame
+    </h3>
+
+</div>
+
+
+
+<div class="deliverable fade">
+
+    <img
+    src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80"
+    alt="Wedding memories">
+
+    <h3>
+        Edited Photos
+    </h3>
+
+</div>
+
+
+
+<div class="deliverable fade">
+
+    <img
+    src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=600&q=80"
+    alt="Wedding video">
+
+    <h3>
+        Highlight Video
+    </h3>
+
+</div>
+
+
+
+<div class="deliverable fade">
+
+    <img
+    src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=600&q=80"
+    alt="Wedding celebration">
+
+    <h3>
+        Calendar
+    </h3>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     PRICE
+====================================================== -->
+
+<section class="price-section">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+    <div class="small-heading">
+        The Complete Collection
+    </div>
+
+    <h2>
+        Your Wedding Story
+    </h2>
+
+    <p class="price-description">
+
+        Photography · Videography · Albums · Deliverables
+
+    </p>
+
+</div>
+
+
+<button
+class="btn"
+id="priceButton">
+
+    Reveal Package Price
+
+</button>
+
+
+<div
+class="price"
+id="price">
+
+    ₹1,10,000
+
+</div>
+
+
+<p
+id="priceText"
+style="display:none; color:#cfc6c0;">
+
+    Complete Wedding Photography & Videography Package
+
+</p>
+
+
+<a
+id="whatsappButton"
+class="whatsapp"
+style="display:none"
+href="https://wa.me/919085808519?text=Hello%20Poetic%20Films%2C%20I%20am%20interested%20in%20your%20wedding%20package."
+target="_blank">
+
+    Enquire on WhatsApp
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <h2>
+        POETIC FILMS
+    </h2>
+
+    <div class="footer-line"></div>
+
+    <p>
+        Capturing moments. Creating memories.
+    </p>
+
+    <a
+    href="https://wa.me/919085808519?text=Hello%20Poetic%20Films%2C%20I%20would%20like%20to%20know%20more%20about%20your%20wedding%20package."
+    target="_blank"
+    class="btn">
+
+        Contact Us
+
+    </a>
+
+    <br><br>
+
+    <div class="copyright">
+
+        © POETIC FILMS · ALL RIGHTS RESERVED
+
+    </div>
+
+</footer>
+
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script>
+
+
+/* ======================================================
+   EVENT CARD CLICK
+====================================================== */
+
+const eventCards =
+document.querySelectorAll(".event-card");
+
+
+eventCards.forEach(card => {
+
+    card.addEventListener("click", () => {
+
+        card.classList.toggle("active");
+
+    });
+
+});
+
+
+
+/* ======================================================
+   PRICE REVEAL
+====================================================== */
+
+const priceButton =
+document.getElementById("priceButton");
+
+const price =
+document.getElementById("price");
+
+const priceText =
+document.getElementById("priceText");
+
+const whatsappButton =
+document.getElementById("whatsappButton");
+
+
+priceButton.addEventListener("click", () => {
+
+    price.classList.add("show");
+
+    priceText.style.display = "block";
+
+    whatsappButton.style.display = "inline-block";
+
+    priceButton.style.display = "none";
+
+});
+
+
+
+/* ======================================================
+   SCROLL ANIMATION
+====================================================== */
+
+const fadeElements =
+document.querySelectorAll(".fade");
+
+
+const observer =
+new IntersectionObserver(
+
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("visible");
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold: 0.15
+    }
+
+);
+
+
+fadeElements.forEach(element => {
+
+    observer.observe(element);
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>
